@@ -1,0 +1,8 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Hai
+  given-names: Ling
+title:DirkCHoffmann/Hai-et-al.-2024-Nature_Communications: Initial release
+version: v.0.1.0
+date-released: 2024-01-10
