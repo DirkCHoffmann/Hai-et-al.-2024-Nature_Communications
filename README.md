@@ -22,8 +22,9 @@ Ling Hai (1,2,3,4)+, Dirk C Hoffmann (2,3,4)+, Robin J Wagener (2,3), Daniel D A
 (18) Department of Neurosurgery, Heidelberg University Hospital, Heidelberg, Germany
 (19) Biomedical Informatics, Data Mining and Data Analytics, Faculty of Applied Computer Science and Medical Faculty, University of Augsburg, Augsburg, Germany
 
-+ These authors contributed equally: Ling Hai, Dirk C Hoffmann
-$ Corresponding author: Tobias Kessler MD, Neurology Clinic and Neurooncology Program at the National Center for Tumor Diseases & DKTK, DKFZ, Im Neuenheimer Feld 400, D-69120 Heidelberg, Germany. Phone: +49 6221 56 7075, Fax: +49 6221 56 7554, E-mail: t.kessler@dkfz.de 
+
++These authors contributed equally: Ling Hai, Dirk C Hoffmann
+$Corresponding author: Tobias Kessler MD, Neurology Clinic and Neurooncology Program at the National Center for Tumor Diseases & DKTK, DKFZ, Im Neuenheimer Feld 400, D-69120 Heidelberg, Germany. Phone: +49 6221 56 7075, Fax: +49 6221 56 7554, E-mail: t.kessler@dkfz.de 
 
 Tumor microtubes (TMs) connect glioma cells to a network with considerable relevance for tumor progression and therapy resistance. However, the determination of TM-interconnectivity in individual tumors is challenging and the impact on patient survival unresolved. Here, we establish a connectivity signature from single-cell RNA-sequenced (scRNA-Seq) xenografted primary glioblastoma (GB) cells using a dye uptake methodology, and validate it with recording of cellular calcium epochs and clinical correlations. Astrocyte-like and mesenchymal-like GB cells have the highest connectivity signature scores in scRNA-sequenced patient-derived xenografts and patient samples. In large GB cohorts, TM-network connectivity correlates with the mesenchymal subtype and dismal patient survival. CHI3L1 gene expression serves as a robust molecular marker of connectivity and functionally influences TM networks. The connectivity signature allows insights into brain tumor biology, provides a proof-of-principle that tumor cell TM-connectivity is relevant for patients’ prognosis, and serves as a robust prognostic biomarker. 
 
