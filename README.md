@@ -30,3 +30,32 @@ Tumor microtubes (TMs) connect glioma cells to a network with considerable relev
 
 We here provide the codes that underly the interaction web app (https://connectivity-glioma.dkfz.de, https://zenodo.org/doi/10.5281/zenodo.10481240)
 
+## Executing the app with Docker
+The docker image dirkhoffmann92/connectivity-glioma:latest contains the run environment for the app including [ShinyServer](https://shiny.posit.co/r/articles/share/shiny-server/) and the required R packages. Importantly, it does NOT contain the app R code itself, nor the data required to execute the app. These must be mounted into the container when it is launched.  
+
+From inside of a folder with the following file structure:
+```.
+├── data
+│   ├── choice.ann.rds # data
+│   ├── choice.gene.rds # data
+│   ├── Patient.Counts.rds # data
+│   ├── Patient.Meta.rds # data
+│   ├── PDX.Counts.rds # data
+│   └── PDX.Meta.rds # data
+├── log
+├── shiny-server
+│   └── Connectivity
+│       └── app.R # the app code
+└── shiny-server.conf # the shiny server configuration file (if you want to overwrite the defaults)
+```
+The app can be launched with Docker
+```
+docker run -d -p 8080:3838 \
+  -v ./shiny-server/Connectivity:/srv/shiny-server/Connectivity \
+  -v ./log:/var/log/shiny-server \
+  -v ./shiny-server.conf:/etc/shiny-server/shiny-server.conf \
+  -v ./data:/Data \
+  --name connectivity-glioma-app dirkhoffmann92/connectivity-glioma:latest
+```
+It will then be accessible via the URL `http://<server_ip_address>:8080/Connectivity`
+
